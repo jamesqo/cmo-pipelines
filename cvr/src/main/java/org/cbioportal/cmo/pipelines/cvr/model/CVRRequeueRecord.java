@@ -43,6 +43,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 import jakarta.annotation.Generated;
@@ -55,7 +56,7 @@ import jakarta.annotation.Generated;
     "result",
     "sample_id"
 })
-public class CVRRequeueRecord {
+public class CVRRequeueRecord implements Serializable {
 
     @JsonProperty("disclaimer")
     private String disclaimer;
